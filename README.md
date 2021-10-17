@@ -94,5 +94,5 @@ This is a practical project for intermediate android developers that covers the 
    - implementation 'com.github.bumptech.glide:glide:4.11.0'
    - kapt 'com.github.bumptech.glide:compiler:4.11.0'
   
-  Thanks Philipp Lackner
+  Thanks to Philipp Lackner
   https://github.com/philipplackner
