@@ -1,6 +1,6 @@
 # NewsAPP Android-Intermediate-Level
 
-// Architectural Components
+    // Architectural Components
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
 
     // Room
