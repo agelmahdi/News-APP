@@ -2,7 +2,7 @@
 
 This is a practical project for intermediate android developers that covers the following skills: Real-like coding with Kotlin, MVVM Design pattern, Kotlin Coroutines, Room database, Recyclerview, Retrofit, and Navigation Controller.
 
-# KotlinCoroutine
+# Kotlin Coroutine
 
 1. Threads and Functions?
    - Function: is a sequence of instructions that takes inputs and gives us the output.
@@ -37,10 +37,15 @@ This is a practical project for intermediate android developers that covers the 
 
 7. Coroutine Scope:
    - Every coroutine must start in a coroutine scope.
-   - Global scope, means this will live as long as our application does,  
+     - Global scope, means this will live as long as our application does,  
        of course if coroutine finishes its job it will be destroyed and not kept alive util the apps dies,
        but let say coroutine still has instructions to do but apps dies it also dies because of Global scope.
-   - if the main tread finishes his work, means all other threads or coroutines will be canceled.
+       
+     - ViewModel Scope: A scope bound to a view model. Use this when including the architecture components ktx library. 
+       This scope binds coroutines to the view model. When it is destroyed, the coroutines running within the ViewModel’s context will be cancelled automatically.
+     - Custom Scope: A scope bound to an object extending Coroutine scope. When you extend CoroutineScope from your object and tie it to an associated Job, you can manage the coroutines running within this scope. For example, you call job = Job() from your activity’s onCreate and job.cancel() from onDestroy() to cancel any coroutines running within this component’s custom scope.
+       - if the main tread finishes his work, means all other threads or coroutines will be canceled.
+     
     
 9. Difference between delay and sleep?
    - Delay: only pause the current coroutine and not block and whole thread.
@@ -61,7 +66,7 @@ This is a practical project for intermediate android developers that covers the 
    - for testing with Junit to actually access the suspend function from within a test function.
    - Quickly play around coroutines to figure out how actually they work behind the sence.
 
-# RoomDatabase
+# Room Database
 
 1. What is Room?
 
@@ -75,6 +80,10 @@ This is a practical project for intermediate android developers that covers the 
     - Entity: Instead of creating the SQLite table, we will create the Entity. Entity is nothing but a model class annotated with @Entity. The variables of this class is our columns, and the class is our table.
     - Database: It is an abstract class where we define all our entities.
     - DAO: Stands for Data Access Object. It is an interface that defines all the operations that we need to perform in our database.
+    
+    ![room_architecture](https://user-images.githubusercontent.com/26491505/137635592-356932fb-0ea1-498d-83b6-49c0d86adf2a.png)
+
+    
 14. All Dependencies for the project.
 
     // Architectural Components
