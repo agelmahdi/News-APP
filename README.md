@@ -1,7 +1,6 @@
 # NewsAPP Android-Intermediate-Level
 
-This is a practical project for intermediate android developers that covers the following skills:
- -> Real-like coding with Kotlin, MVVM Design pattern, Kotlin Coroutines, Room database, Recyclerview, Retrofit, and Navigation Controller.
+This is a practical project for intermediate android developers that covers the following skills: Real-like coding with Kotlin, MVVM Design pattern, Kotlin Coroutines, Room database, Recyclerview, Retrofit, and Navigation Controller.
 
 # KotlinCoroutine
 
@@ -62,8 +61,7 @@ This is a practical project for intermediate android developers that covers the 
    - for testing with Junit to actually access the suspend function from within a test function.
    - Quickly play around coroutines to figure out how actually they work behind the sence.
    
-
- 
+14. All Dependencies for the project.
 
     // Architectural Components
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
