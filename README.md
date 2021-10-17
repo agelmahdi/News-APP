@@ -79,7 +79,7 @@ This is a practical project for intermediate android developers that covers the 
 
     // Architectural Components
     
-   - implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
+      - implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
 
     // Room
    - implementation "androidx.room:room-runtime:2.2.5"
