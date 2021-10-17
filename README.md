@@ -15,8 +15,8 @@ This is a practical project for intermediate android developers that covers the 
    
 3. Why is threading important for android apps?
   - All instructions are generally executed in a single thread which is called the Main thread that can lead to some problems:
-    A. The UI needed to be updated in the same thread,
-    B. When making a network call that takes a long time to be executed, other instructions won't be executed.
+    - The UI needed to be updated in the same thread,
+    - When making a network call that takes a long time to be executed, other instructions won't be executed.
      - for That, we start a separate thread to not block other important threads.
 
 4. When to use Multithreading?
