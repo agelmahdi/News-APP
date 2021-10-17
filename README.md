@@ -70,7 +70,7 @@ This is a practical project for intermediate android developers that covers the 
 
 2. Components of Room
 
-   - We have 3 components of room.
+  - We have 3 components of room.
    
     - Entity: Instead of creating the SQLite table, we will create the Entity. Entity is nothing but a model class annotated with @Entity. The variables of this class is our columns, and the class is our table.
     - Database: It is an abstract class where we define all our entities.
@@ -79,7 +79,7 @@ This is a practical project for intermediate android developers that covers the 
 
     // Architectural Components
     
-      - implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
+      implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
 
     // Room
    - implementation "androidx.room:room-runtime:2.2.5"
