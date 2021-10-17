@@ -60,7 +60,20 @@ This is a practical project for intermediate android developers that covers the 
    - if you don't care about that it is not asynchronous. 
    - for testing with Junit to actually access the suspend function from within a test function.
    - Quickly play around coroutines to figure out how actually they work behind the sence.
-   
+
+# RoomDatabase
+
+1. What is Room?
+
+  - The Room persistence library provides an abstraction layer over SQLite to allow for more robust database access while harnessing the full power of SQLite.
+  - Basically, with the help of room we can quickly create sqlite databases and perform the operations like create, read, update and delete. Room makes everything very easy and quick.
+
+2. Components of Room
+
+   - We have 3 components of room.
+    - Entity: Instead of creating the SQLite table, we will create the Entity. Entity is nothing but a model class annotated with @Entity. The variables of this class is our columns, and the class is our table.
+    - Database: It is an abstract class where we define all our entities.
+    - DAO: Stands for Data Access Object. It is an interface that defines all the operations that we need to perform in our database.
 14. All Dependencies for the project.
 
     // Architectural Components
