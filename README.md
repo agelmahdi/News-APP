@@ -79,7 +79,7 @@ This is a practical project for intermediate android developers that covers the 
 7. Navigation handles complex navigation.
 8. WorkManager manages background tasks.
 
-![image](https://user-images.githubusercontent.com/26491505/137820045-2505a1d1-b0de-431f-bb45-69b2ee7eec7d.png)
+![image](https://user-images.githubusercontent.com/26491505/137820915-37e83a88-c8e2-4316-a356-5309d975ef92.png)
 
 # Room Database
 
