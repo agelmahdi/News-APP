@@ -115,11 +115,11 @@ This is a practical project for intermediate android developers that covers the 
   2. Using any tool like RxJava for DataBinding.
                    
                   
-14. All Dependencies for the project.
+ All Dependencies for the project.
 
     // Architectural Components
     
-      implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
+   - implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
 
     // Room
    - implementation "androidx.room:room-runtime:2.2.5"
