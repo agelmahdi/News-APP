@@ -66,6 +66,21 @@ This is a practical project for intermediate android developers that covers the 
    - for testing with Junit to actually access the suspend function from within a test function.
    - Quickly play around coroutines to figure out how actually they work behind the sence.
 
+# Android Architecture Components
+
+ - Android Architecture Components are a set of libraries to help with various challenges in dealing with Android architecture.
+ 
+1. Room handles database persistence.
+2. Lifecycle helps you create components that are aware of the current Android lifecycle state.
+3. ViewModel holds data and survives configuration changes.
+4. LiveData provides observable data to views.
+5. Data binding allows Android Views to observe changes to data in XML.
+6. Paging handles displaying infinite lists.
+7. Navigation handles complex navigation.
+8. WorkManager manages background tasks.
+
+![image](https://user-images.githubusercontent.com/26491505/137820045-2505a1d1-b0de-431f-bb45-69b2ee7eec7d.png)
+
 # Room Database
 
 1. What is Room?
@@ -80,10 +95,26 @@ This is a practical project for intermediate android developers that covers the 
     - Entity: Instead of creating the SQLite table, we will create the Entity. Entity is nothing but a model class annotated with @Entity. The variables of this class is our columns, and the class is our table.
     - Database: It is an abstract class where we define all our entities.
     - DAO: Stands for Data Access Object. It is an interface that defines all the operations that we need to perform in our database.
-    
-    ![room_architecture](https://user-images.githubusercontent.com/26491505/137635592-356932fb-0ea1-498d-83b6-49c0d86adf2a.png)
 
-    
+![image](https://user-images.githubusercontent.com/26491505/137813145-a1347b9c-35a8-49a3-9642-02b23d4a3e17.png)
+
+   
+# MVVM Design pattern
+
+   - Model: This layer is responsible for the abstraction of the data sources. Model and ViewModel work together to get and save the data.
+   - View: The purpose of this layer is to inform the ViewModel about the user’s action. This layer observes the ViewModel and does not contain any kind of application logic.
+   - ViewModel: It exposes those data streams which are relevant to the View. Moreover, it servers as a link between the Model and the View.
+   
+![image](https://user-images.githubusercontent.com/26491505/137802023-883c2834-3b90-479a-ada8-f8ad129d4021.png)
+
+                  
+- Ways to Implement MVVM in the Project
+   - There are 2 ways to implement MVVM design pattern in Android projects:
+
+  1. Using the DataBinding library released by Google
+  2. Using any tool like RxJava for DataBinding.
+                   
+                  
 14. All Dependencies for the project.
 
     // Architectural Components
