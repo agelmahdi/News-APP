@@ -1,4 +1,4 @@
-# NewsAPP Android-Intermediate-Level
+# NewsAPP Android Intermediate Level
 
 This is a practical project for intermediate android developers that covers the following skills: Real-like coding with Kotlin, MVVM Design pattern, Kotlin Coroutines, Room database, Recyclerview, Retrofit, and Navigation Controller.
 
