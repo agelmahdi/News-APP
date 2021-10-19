@@ -1,4 +1,4 @@
-package com.agelmahdi.Room
+package com.agelmahdi.newsapp.Room
 
 import androidx.room.TypeConverter
 import com.agelmahdi.newsapp.Model.NewsModel.Source

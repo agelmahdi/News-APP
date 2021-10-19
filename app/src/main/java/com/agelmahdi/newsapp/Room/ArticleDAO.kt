@@ -1,4 +1,4 @@
-package com.agelmahdi.Room
+package com.agelmahdi.newsapp.Room
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
