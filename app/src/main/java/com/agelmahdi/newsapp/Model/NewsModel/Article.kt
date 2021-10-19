@@ -13,6 +13,7 @@ data class Article(
     val content: String,
     val description: String,
     val publishedAt: String,
+    // interpret this source data class using TypeConverter
     val source: Source,
     val title: String,
     val url: String,
