@@ -5,7 +5,7 @@ import com.agelmahdi.newsapp.Model.NewsModel.Source
 
 class Converters {
     // Room can only handle primitive data type and strings
-    // TypeConverter to interpret source class to convert that into a string
+    // TypeConverter to interpret source class to convert that into a string or primitive data type
 
     @TypeConverter
     fun fromSource(source: Source): String{
