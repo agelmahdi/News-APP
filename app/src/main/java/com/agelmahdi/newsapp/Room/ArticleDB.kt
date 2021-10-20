@@ -15,7 +15,7 @@ import com.agelmahdi.newsapp.Model.NewsModel.Article
 @TypeConverters(Converters::class)
 abstract class ArticleDB : RoomDatabase() {
 
-    abstract fun getArticleDAO(): ArticleDB
+    abstract fun getArticleDAO(): ArticleDAO
 
     companion object {
         @Volatile // other threads can immediately see when a thread changes this instance
