@@ -21,13 +21,15 @@ class NewsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_news)
+        setupArchitecturalSkeleton();
+        // setup bottom nav view with navigation component
+        setupNavHostFragment()
+    }
 
+    private fun setupArchitecturalSkeleton(){
         val newsRepository = NewsRepository(ArticleDB(this))
         val viewModelProviderFactory = NewsViewModelProviderFactory(newsRepository)
         viewModel = ViewModelProvider(this, viewModelProviderFactory).get(NewsViewModel::class.java)
-
-        // setup bottom nav view with navigation component
-        setupNavHostFragment()
     }
 
     private fun setupNavHostFragment() {

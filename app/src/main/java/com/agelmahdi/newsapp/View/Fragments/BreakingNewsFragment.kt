@@ -23,6 +23,10 @@ class BreakingNewsFragment : Fragment(R.layout.fragment_breaking_news) {
         super.onViewCreated(view, savedInstanceState)
         newsViewModel = (activity as NewsActivity).viewModel
         setupRecyclerView()
+        observeLiveData()
+    }
+
+    private fun observeLiveData() {
         newsViewModel.breakingNews.observe(viewLifecycleOwner, Observer { response ->
             when (response) {
                 is Resource.Success -> {
@@ -45,7 +49,6 @@ class BreakingNewsFragment : Fragment(R.layout.fragment_breaking_news) {
             }
         })
     }
-
 
     private fun setupRecyclerView() {
         newsAdapter = NewsAdapter()
