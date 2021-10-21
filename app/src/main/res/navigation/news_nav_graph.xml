@@ -18,7 +18,11 @@
     <fragment
         android:id="@+id/articleFragment"
         android:name="com.agelmahdi.newsapp.View.Fragments.ArticleFragment"
-        android:label="ArticleFragment" />
+        android:label="ArticleFragment" >
+        <argument
+            android:name="article"
+            app:argType="com.agelmahdi.newsapp.Model.NewsModel.Article" />
+    </fragment>
     <fragment
         android:id="@+id/searchNewsFragment"
         android:name="com.agelmahdi.newsapp.View.Fragments.SearchNewsFragment"
