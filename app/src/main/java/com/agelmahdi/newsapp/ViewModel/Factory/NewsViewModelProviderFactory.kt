@@ -1,7 +1,9 @@
 package com.agelmahdi.newsapp.ViewModel.Factory
 
+import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.agelmahdi.newsapp.NewsApplication
 import com.agelmahdi.newsapp.Repository.NewsRepository
 import com.agelmahdi.newsapp.ViewModel.NewsViewModel
 
@@ -13,8 +15,8 @@ import com.agelmahdi.newsapp.ViewModel.NewsViewModel
 *       and give value to the ViewModelProvider.Factory instance.
 * */
 
-class NewsViewModelProviderFactory(val newsRepository: NewsRepository): ViewModelProvider.Factory {
+class NewsViewModelProviderFactory(val app: Application,val newsRepository: NewsRepository): ViewModelProvider.Factory {
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-        return NewsViewModel(newsRepository) as T
+        return NewsViewModel(app,newsRepository) as T
     }
 }

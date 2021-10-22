@@ -1,8 +1,8 @@
 package com.agelmahdi.newsapp.View.Fragments
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -62,7 +62,11 @@ class SearchNewsFragment : Fragment(R.layout.fragment_search_news) {
                 is Resource.Error -> {
                     hideProgressBar()
                     response.message?.let { message ->
-                        Log.e(TAG, "Something went wrong: $message")
+                        Toast.makeText(
+                            activity,
+                            "Something went wrong: $message",
+                            Toast.LENGTH_SHORT
+                        ).show()
                     }
                 }
 
@@ -81,7 +85,7 @@ class SearchNewsFragment : Fragment(R.layout.fragment_search_news) {
         }
 
         newsAdapter.setOnItemClickListener {
-            val bundle= Bundle().apply{
+            val bundle = Bundle().apply {
                 putSerializable("article", it)
             }
             findNavController().navigate(

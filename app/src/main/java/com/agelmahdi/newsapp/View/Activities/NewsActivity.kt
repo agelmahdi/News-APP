@@ -3,9 +3,7 @@ package com.agelmahdi.newsapp.View.Activities
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.agelmahdi.newsapp.R
 import com.agelmahdi.newsapp.Repository.NewsRepository
@@ -28,7 +26,7 @@ class NewsActivity : AppCompatActivity() {
 
     private fun setupArchitecturalSkeleton(){
         val newsRepository = NewsRepository(ArticleDB(this))
-        val viewModelProviderFactory = NewsViewModelProviderFactory(newsRepository)
+        val viewModelProviderFactory = NewsViewModelProviderFactory(application,newsRepository)
         viewModel = ViewModelProvider(this, viewModelProviderFactory).get(NewsViewModel::class.java)
     }
 
